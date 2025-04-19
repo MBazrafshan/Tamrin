@@ -1,0 +1,29 @@
+const orders = {
+    book: {
+        name: "JS",
+        model: "2000",
+        price: 6000,
+        count: 3
+    },
+    pen: {
+        name: "light Pen",
+        model: "LP",
+        price: 2000,
+        count: 4
+    },
+    laptop: {
+        name: "Laptop",
+        model: "ASUS",
+        price: 3500,
+        count: 2
+    }
+};
+for (let item in orders) {
+    orders[item].price += 10;
+}
+let totalPrice = 0;
+
+for (let item in orders) {
+    totalPrice += orders[item].price * orders[item].count;
+}
+console.log("Total:", totalPrice);
