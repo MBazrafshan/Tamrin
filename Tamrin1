@@ -1,0 +1,11 @@
+let start = 3;
+let end = 5;
+for (let i = start; i <= end; i++) {
+    console.log( jadval adad ${i}:);
+    for (let j = 1; j <= 10; j++) 
+        if (!(i === 3 && j === 3) && !(i === 4 && j === 3) && !(i === 5 && j === 3)) {
+            console.log(${i} * ${j} = ${i * j});
+        }
+    }
+    console.log('-------------------'); 
+}
