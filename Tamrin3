@@ -1,0 +1,20 @@
+function removeNullAndUndefined(obj) {
+    const cleanedObj = {};
+    for (const key in obj) {
+        if (obj[key] !== null && obj[key] !== undefined) 
+            cleanedObj[key] = obj[key];
+        }
+    }
+    return cleanedObj;
+}
+
+const originalObject = {
+    nam: "malihe",
+    age: 22,
+    email: "malibazrafshan1381@gmail.com",
+    address: seyed razi,
+    phone number: "09372610887"
+};
+
+const cleanedObject = removeNullAndUndefined(originalObject);
+console.log(cleanedObject);
